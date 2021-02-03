@@ -1,0 +1,63 @@
+{
+    "name": "NikJaySix/LaravelMailgun",
+    "description": "Laravel package for sending mail via the Mailgun API - adapted from Bogardo \ Mailgun for Laravel 7+ support",
+    "keywords": [
+        "mailgun",
+        "laravel",
+        "mail",
+        "email",
+        "bogardo",
+        "nikjaysix"
+    ],
+    "homepage": "https://github.com/NikJaySix/LaravelMailgun",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nik Jay",
+            "email": "hello@nikaysix.com",
+            "homepage": "http://www.nikaysix.com.au/"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "mailgun/mailgun-php": "^3.3.0",
+        "nesbot/carbon": "^2.0",
+        "php-http/message": "^ 1.9.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "orchestra/testbench": "^3.3",
+        "php-http/mock-client": "^0.3.3",
+        "phpunit/phpunit": "^8.5",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "NikJaySix\\LaravelMailgun\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "tests/MailgunTestCase.php"
+        ]
+    },
+    "scripts": {
+        "style:check": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src",
+        "style:fix": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src"
+    },
+    "suggest": {
+        "barryvdh/laravel-ide-helper": "Add accurate autocompletion for Laravel Facades, including the Mailgun facade",
+        "php-http/guzzle6-adapter": "Use Guzzle 6 as your Mailgun HTTP client",
+        "php-http/guzzle5-adapter": "Use Guzzle 5 as your Mailgun HTTP client"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NikJaySix\\LaravelMailgun\\MailgunServiceProvider"
+            ],
+            "aliases": {
+                "Mailgun": "NikJaySix\\LaravelMailgun\\Facades\\Mailgun"
+            }
+        }
+    }
+}
