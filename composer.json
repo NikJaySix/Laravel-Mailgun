@@ -1,5 +1,5 @@
 {
-    "name": "NikJaySix/LaravelMailgun",
+    "name": "nikjaysix/laravel-mailgun",
     "description": "Laravel package for sending mail via the Mailgun API - adapted from Bogardo Mailgun for Laravel 6+ support",
     "keywords": [
         "mailgun",
@@ -9,7 +9,7 @@
         "bogardo",
         "nikjaysix"
     ],
-    "homepage": "https://github.com/NikJaySix/LaravelMailgun",
+    "homepage": "https://github.com/NikJaySix/Laravel-Mailgun",
     "license": "MIT",
     "authors": [
         {
