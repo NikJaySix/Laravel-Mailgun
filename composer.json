@@ -1,6 +1,6 @@
 {
     "name": "NikJaySix/LaravelMailgun",
-    "description": "Laravel package for sending mail via the Mailgun API - adapted from Bogardo \ Mailgun for Laravel 7+ support",
+    "description": "Laravel package for sending mail via the Mailgun API - adapted from Bogardo \ Mailgun for Laravel 6+ support",
     "keywords": [
         "mailgun",
         "laravel",
